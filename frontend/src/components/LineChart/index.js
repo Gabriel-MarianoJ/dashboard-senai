@@ -36,7 +36,7 @@ const LineChart = () => {
                 },
                 series: [
                     {
-                        name: "Avanço",
+                        name: "mm / s",
                         data: mySeries,
                     },
                 ],
@@ -50,12 +50,14 @@ const LineChart = () => {
         },
         stroke: {
             curve: 'straight'
-        }
+        },
+        colors: ['#32c2a8']
     }
 
     return (
         <>
             <h2 className="text-secondary">Avanço</h2>
+            <h6 className='text-secondary'>Últimos 10 minutos</h6>
             <Chart
                 options={{ ...options, xaxis: charData.labels }}
                 type="line"

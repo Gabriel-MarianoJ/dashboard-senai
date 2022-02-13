@@ -1,5 +1,6 @@
 import AreaChart from "../components/AreaChart";
 import BarChart from "../components/BarChart";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LineChart from "../components/LineChart";
 
@@ -17,13 +18,15 @@ const Home = () => {
                 </div>
                 <div className="row mt-5">
                     <div className="col-sm-6">
-                        <BarChart />
+                        <LineChart />
                     </div>
                     <div className="col-sm-6">
-                        <LineChart />
+                        <BarChart />
                     </div>
                 </div>
             </div>
+
+            <Footer />
         </>
     )
 }

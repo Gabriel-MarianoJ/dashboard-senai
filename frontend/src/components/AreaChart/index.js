@@ -36,7 +36,7 @@ const AreaChart = () => {
                 },
                 series: [
                     {
-                        name: "Rotação",
+                        name: "RPM",
                         data: mySeries,
                     },
                 ],
@@ -57,12 +57,14 @@ const AreaChart = () => {
         },
         dataLabels: {
             enabled: true,
-        }
+        },
+        colors: ['#713bb8']
     }
 
     return (
         <>
             <h2 className="text-secondary">Rotação</h2>
+            <h6 className='text-secondary'>Últimos 10 minutos</h6>
             <Chart
                 options={{ ...options, xaxis: charData.labels }}
                 type="area"

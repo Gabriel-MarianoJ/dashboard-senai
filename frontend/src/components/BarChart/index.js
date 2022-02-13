@@ -57,6 +57,7 @@ const BarChart = () => {
   return (
     <>
       <h2 className="text-secondary">Temperatura</h2>
+      <h6 className='text-secondary'>Últimos 20 segundos</h6>
       <Chart
         options={{ xaxis: charData.labels, ...options }}
         series={charData.series}
